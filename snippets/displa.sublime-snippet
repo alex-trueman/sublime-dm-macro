@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!displa &in($1),
+  @hardcopy=${2:0},@truesize=${3:0},@xoffset=${4:0},@yoffset=${5:0},
+  @pause=$6,@scale=$7
+]]></content>
+  <tabTrigger>displa</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Display plot file.</description>
+</snippet>

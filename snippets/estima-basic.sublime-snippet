@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+!estima &proto($1),&in($2),&model($3),
+  &srcparm(${4:xxspar}),&estparm(${5:xxepar}),&vmodparm(${6:xxvpar}),
+  *x(${7:X}),*y(${8:Y}),*z(${9:Z}),*zone1_f($10),*key(${11:BHID}),
+  @discmeth=${12:1},@xpoints=${13:1},@ypoints=${14:1},@zpoints=${15:1},
+  @parent=${16:1},@copyval=${17:0},@print=${18:0}
+]]></content>
+  <tabTrigger>estima-basic</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Block model grade estimation - basic options.</description>
+</snippet>

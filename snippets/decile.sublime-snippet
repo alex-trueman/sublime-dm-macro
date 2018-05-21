@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!decile &in($1),&priout($2),&decout($3),&splitout($4),
+  *value($5),*select($6),
+  @cutoff=$7,@topcut=${8:0},@tcutoff=$9,@criteria=$10
+]]></content>
+  <tabTrigger>decile</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Calculate deciles.</description>
+</snippet>

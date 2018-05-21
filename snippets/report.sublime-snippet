@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+!report &in($1),
+  @lines=${2:-},@noff=${3:0},@sysfile=${4:0}
+${5:system file name}
+${6:half line header}
+${7:half line header}
+${8:half line header}
+${9:half line header}
+${10:half line header}
+${11:half line header}
+${12:half line header}
+${13:half line header}
+${14:half line header}
+${15:half line header}
+${16:field}
+${17:format}
+
+]
+]]></content>
+  <tabTrigger>report</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Formatted tabulation.</description>
+</snippet>

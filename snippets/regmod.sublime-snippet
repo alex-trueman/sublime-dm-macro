@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!regmod &in1($1),&in2($2),&fieldlst($3),&out($4),
+  *f1($5),*f2($6),*f3($7),*f4($8),
+  *fieldnam($9),
+  @print=${10:0}
+]]></content>
+  <tabTrigger>regmod</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Regularize blocks in a block model.</description>
+</snippet>

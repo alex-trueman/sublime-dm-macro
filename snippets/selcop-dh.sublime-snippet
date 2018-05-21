@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+!selcop &in($1),&out($3),
+  *f1(BHID),*f2(FROM),*f3(TO),*f4(LENGTH),
+  *f5(X),*f6(Y),*f7(Z),*f8(A0),
+  *f9(B0),*f10($4),*f11($5),*f12($6),
+  *f13($7),*f14($8),*f15($9),*f16($10),
+  @keepall=${11:0}
+]]></content>
+  <tabTrigger>selcop_dh</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Copy file with drillhole fields.</description>
+</snippet>

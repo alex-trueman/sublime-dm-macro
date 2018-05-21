@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+!reblock &modin($1),&modout($2),
+  *density(${3:DENSITY}),*fillvol($4),*voidvol($5),
+  *vwfld1($6),*vwfld2($7),*vwfld3($8),*vwfld4($9),
+  *domfld1($10),*domfld2($11),*domfld3($12),*domfld4($13),
+  *addfld1($14),*addfld2($15),*addfld3($16),*addfld4($17),
+  *minfld1($18),*minfld2($19),*minfld3($20),*minfld4($21),
+  *maxfld1($22),*maxfld2($23),*maxfld3($24),*maxfld4($25),
+  @xinc=$26,@yinc=$27,@zinc=$28,@fullcell=${29:0},@density=$30,
+  @setabsnt=${31:0}
+
+# &modin* input block model file; &modout* output block model file;
+# *density* density field for weighting; *fillvol proportion of block
+# defined by sub-cells (only if @fullcell=1); *voidvol is *fillvol - 1;
+# *vwfld1...15 fields to be volume weighted; *domfld1...10 fields defined
+# as dominant; *addfld1...10 additive fields; *minfld1...5 using minimum;
+# *maxfld1...5 using maximum; @xinc, @yinc, and @zinc are new cell sizes
+# (not used is @fullcell=1); @fullcell set to 1 to re-block to sub-cell
+# model to parent cell; @density density constant if *density not present;
+# @setabsnt use @density to assign density where *density is absent.
+]]></content>
+  <tabTrigger>reblock</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Re-block a model.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!cdtran &in($1),&protorot($2),&out($3),
+  *x($4),*y($5),*z($6),
+  *newx($7),*newy($8),*newz($9),
+  @angle1=${10:0},@angle2=${11:0},@angle3=${12:0},
+  @rotaxis1=${13:0},@rotaxis2=${14:0},@rotaxis3=${15:0},
+  @x0=${16:0},@y0=${17:0},@z0=${18:0},@xr0=${19:0},@yr0=${20:0},@zr0=${21:0},
+  @factor=${22:1},@inverse=${23:0},@print=${24:0}
+]]></content>
+  <tabTrigger>cdtran</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Coordinate transformation.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!addmod &in1($1),&in2($2),&out($3),
+  @tolernce=${4:0.001}
+]]></content>
+  <tabTrigger>addmod</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Combine two block models.</description>
+</snippet>

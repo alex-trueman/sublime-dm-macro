@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+!chart &in($1),&proto($2),&anno($3),
+  &out($4),&plot($5),
+  *x($6),*y($7),*weight($8),
+  *key1($9),*key2($10),*key3($11),
+  @charttyp=${12:1},@histtyp=${13:1},@binsize=${14:1},@binmin=${15:0},
+  @binmax=$16,@binmeth=${17:1},@xtrans=${18:1},@ytrans=${19:1},
+  @logmin=${20:0.01},@frametyp=${21:2},@xfactor=${22:1},@yfactor=${23:1},
+  @linetyp1=${24:1},@symbol1=${25:92},@symsize1=${26:3},@colour1=${27:12},
+  @linetyp2=${28:0},@symbol2=${29:0},@symsize2=${30:3},@colour2=${31:0},
+  @append=${32:0},@colflag=${33:1},@legend=$34,@legchsiz=${35:3},
+  @tcharsz=${36:3},@tcolour=${37:12},@xinc=$38,@yinc=$39,
+  @ndx=$40,@ndy=$41,@igrid=${42:3},@fcharsz=${43:3},
+  @fcolour=${44:12},@xpaper=${45:240},@ypaper=${46:200},@xmin=$47,
+  @xmax=$48,@ymin=$49,@ymax=$50,@xscale=$51,@yscale=$52,
+  @progress=${53:1},@display=${54:1}
+]]></content>
+  <tabTrigger>chart</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Create statistical charts.</description>
+</snippet>

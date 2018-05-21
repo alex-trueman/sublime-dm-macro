@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+# Statistical reports by category field.
+  !let \$file_in#=${1:xx_domain}
+  !let \$file_fields#=${2:xxdhfields_var}
+  !let \$field_category#=${3:DOMAIN}
+  !let \$field_weight#=${4:''}
+  !let \$filter#=${5:''}
+  !let \$file_log#=${6:\$DIR_LOGS#\\stats_dh_raw_domain.csv}
+  !varsave xx_grpstat.txt,@merge=0,
+    $file_in#,$file_fields#,$field_category#,$field_weight#,
+    $filter#,$file_log#
+  !xrun
+  mdl_validation.mac
+  grpstat
+    ]]></content>
+  <tabTrigger>groupstats</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Stats by category.</description>
+</snippet>

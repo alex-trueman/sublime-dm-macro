@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+!polydc &in($1),&srcparm($2),&wiretr($3tr),&wirept($3pt),
+  &out($4),&model($5),&polytr($6tr),&polypt($6pt),
+  *x(${7:X}),*y(${8:Y}),*z(${9:Z}),
+  *wtfield(${10:AU_PPM}),*zone($11),
+  @compleng=${12:0},@xinc=$13,@yinc=$13,@zinc=$13,
+  @srefnum=$14,@radius=$15,@maxgrdpt=$15
+]]></content>
+  <tabTrigger>polydc</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Polyhedral declustering.</description>
+</snippet>

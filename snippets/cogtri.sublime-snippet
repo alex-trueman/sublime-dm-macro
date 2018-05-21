@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!cogtri &wtrin($1tr),&wptin($1pt),
+  &wtrout($2tr),&wptout($2pt),&ptnout($3),
+  @vertex=${4:0},@symbol=${5:216},@symsize=${6:2}
+]]></content>
+  <tabTrigger>cogtri</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Centre of gravity for wireframe triangles.</description>
+</snippet>

@@ -1,0 +1,14 @@
+ <snippet>
+  <content><![CDATA[
+!contou &in($1),&proto($2),&plot($3),
+  *field($4),
+  @vmin=$5,@vmax=$6,@cint=$7,@gridint=$8,
+  @plane=${9:'XY'},@position=$10,@top=$11,@bottom=$12,
+  @hilight=$13,@hicolour=$14,@charsize=${15:3},@aspratio=${16:0.9},
+  @colour=${17:1},@append=${18:0},@xmin=$19,@xmax=$20,
+  @ymin=$21,@ymax=$22,@xscale=$23,@yscale=$24
+]]></content>
+  <tabTrigger>contou</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Contours from block model.</description>
+</snippet>

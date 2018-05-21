@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!mgsort &in($1),&out($2),
+  *key1(IJK),
+  @order=1,@keyfrst=0,@roworder=0
+]]></content>
+  <tabTrigger>mgsort_bm</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Sort block model table.</description>
+</snippet>

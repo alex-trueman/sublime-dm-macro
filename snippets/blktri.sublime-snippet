@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!blktri &in($1),&wiretr($2tr),&wirept($2pt),
+  *class($3),*modcol($4),
+  @plane=${5:0},@xsubcell=${6:1},@ysubcell=${7:1},@zsubcell=${8:1},
+  @order=${9:0},@surface=${10:3},@colour=${11:1}
+]]></content>
+  <tabTrigger>blktri</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Wireframes around blocks.</description>
+</snippet>

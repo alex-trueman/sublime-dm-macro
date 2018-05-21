@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!start macro Describe the purpose of the macro in one line.
+# Gold Fields Exploration Inc.
+# Alex Trueman, $TM_YEAR-dd-mm
+]]></content>
+  <tabTrigger>start</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Start of macro.</description>
+</snippet>

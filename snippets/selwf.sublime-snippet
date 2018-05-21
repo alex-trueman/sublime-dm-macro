@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+!selwf &in($1),&out($2),
+  &wiretr($3tr),&wirept($3pt),
+  *x($4),*y($5),*z($6),*zone($7),
+  *attrib1($8),*attrib2($9),*attrib3($10),*attrib4($11),
+  @select=$12,@plane='${13:XY}',@exclude=${14:0},@toleranc=${15:0.001},
+  @print=${16:0}
+
+@select parameters:
+1 = above DTM surface
+2 = below DTM surface
+3 = inside solid
+4 = outside solid
+5 = above wireframe surface
+6 = below wireframe surface
+7 = between two wireframe surfaces
+8 = outside two wireframe surfaces
+]]></content>
+  <tabTrigger>selwf</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Select using wireframes.</description>
+</snippet>

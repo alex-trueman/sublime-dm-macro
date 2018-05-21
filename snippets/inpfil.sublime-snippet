@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+!inpfil &out($1)
+${2:description or blank line}
+FIELD n y -
+FIELD a 8 y ''
+]
+y
+Name of system file or blank.
+Enter data here or not.
+!rem
+]]></content>
+  <tabTrigger>inpfil</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Import CSV data to new table.</description>
+</snippet>

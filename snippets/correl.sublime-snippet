@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!correl &in($1),&fieldlst($2),
+  *f1($3),*f2($4),*f3($5),*f4($6),*fieldnam($7)
+]]></content>
+  <tabTrigger>correl</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Correlation matrices for all numeric fields.</description>
+</snippet>

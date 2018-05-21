@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!alfnum &in($1)${2:,&fieldlst()},&out($3),
+  *f1($4),*f2($5),*f3($6),*f4($7)${8:,*fieldnam()}
+]]></content>
+  <tabTrigger>alfnum</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Convert alphanumeric fields to numeric.</description>
+</snippet>

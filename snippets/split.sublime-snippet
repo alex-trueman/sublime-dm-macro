@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!split &in($1),&fnames($2),
+  *key($3),
+  @ndp=${4:0},@maxfiles=${5:50}
+]]></content>
+  <tabTrigger>split</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Split file by key field.</description>
+</snippet>

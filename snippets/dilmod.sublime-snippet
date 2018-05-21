@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+# Assign dilution.
+  !let \$file_in# = $1
+  !let \$file_out# = ${2:xx_dilmod}
+  !let \$field_grade# = ${3:AU_PPM}
+  !let \$field_waste# = ${4:DOMAIN}
+  !let \$waste# = ${5:\$DOM_WASTE#}
+  !let \$skin_width_m# = ${6:1}
+  !let \$dilution_axis# = ${7:X}
+  !varsave xx_dilmod.txt,@merge=0,
+    \$file_in#,\$file_out#,\$field_grade#,\$field_waste#,\$waste#,
+    \$skin_width_m#,\$dilution_axis#
+  !xrun
+  mdl_utility.mac
+  DilMod
+]]></content>
+  <tabTrigger>dilmod</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Apply skin dilution to model.</description>
+</snippet>

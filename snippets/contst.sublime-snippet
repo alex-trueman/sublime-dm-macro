@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+!contst &in($1),&out($2),
+  *field($3),
+  @vmin=$4,@vmax=$5,@cint=$6,@gridint=$7,
+  @plane=${8:'XY'},@position=$9,@top=$10,@bottom=$11,
+  @smpass=${12:1},@smfactor=${13:0.5},@smthresh=${14:0.0},@optype=${15:4},
+  @hilioght=$16,@hicolour=${17:2},@colour=${18:1}
+]]></content>
+  <tabTrigger>contst</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Contours from block model to strings.</description>
+</snippet>

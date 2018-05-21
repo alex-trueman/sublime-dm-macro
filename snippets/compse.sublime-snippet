@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!compse &in($1),&out($2),
+  *value($3),
+  @cutoff=${4:0},@minore=$5,@maxwaste=${6:0},@minasfr=${7:0.95},
+  @dilute=${8:1},@narwaste=${9:1}
+]]></content>
+  <tabTrigger>compse</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Composite using ore/waste criteria.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!decode &in($1),&dict($2),&out($3),
+  *code($4),*text($5)
+]]></content>
+  <tabTrigger>decode</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Decodes a field through a dictionary.</description>
+</snippet>

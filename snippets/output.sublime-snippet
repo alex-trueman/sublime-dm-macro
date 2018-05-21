@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!output &in($1),${2:&fieldlst(),}
+  *f1($3),*f2($4),*f3($5),*f4($6),${7:*fieldnam(),}
+  @csv=${8:1},@nodd=${9:0}${10:,@dplace=-1}${11:,@implicit=0}
+${12:system file name}
+]]></content>
+  <tabTrigger>output</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Output Datamine table to system ASCII file.</description>
+</snippet>

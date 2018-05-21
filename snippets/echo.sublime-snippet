@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+!echo $1
+]]></content>
+  <tabTrigger>echo</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Display a macro message.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!else
+  $1
+]]></content>
+  <tabTrigger>else</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Conditional control in IF statement.</description>
+</snippet>

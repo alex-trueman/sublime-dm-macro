@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!declust &in($1),&out($2),&wtout($3),
+  *x($4),*y($5),*z($6),*wtfield($7),
+  @method=${8:1},@xgrid=$9,@ygrid=$10,@zgrid=$11,
+  @xorig=${12:0},@yorig=${13:0},@zorig=${14:0},@centre=${15:0}
+]]></content>
+  <tabTrigger>declust</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Decluster sample data.</description>
+</snippet>

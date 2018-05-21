@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!holes3d &collar(${1:xx-collar}),&survey(${2:xx-survey}),
+  &sample1(${3:xx-assay}),&sample2($4),&sample3($5),&sample4($6),
+  &sample5($7),&sample6($8),&out($9),
+  &holesmry(${10:xx-h3d-smry}),&errors(${11:xx-h3d-smry}),
+  *bhid(BHID),*xcollar(XCOLLAR),*ycollar(YCOLLAR),*zcollar(ZCOLLAR),
+  *from(FROM),*to(TO),*at(AT),*brg(BRG),*dip(DIP),
+  @survsmth=1,@endpoint=0,@prompt=1,@dipmeth=1,@print=0
+]]></content>
+  <tabTrigger>holes3d</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Generate static drillholes</description>
+</snippet>

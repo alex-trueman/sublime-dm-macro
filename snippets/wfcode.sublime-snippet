@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!wfcode &points($1),
+  &wiretr($2_tr),&wirept($2_pt),
+  &perimin($3),&out($4),
+  *x(${5:X}),*y(${6:Y}),*z(${7:Z}),*zone(${8:DOMAIN}),
+  *attrib1(${9:DOMAIN}),*attrib2($10),*attrib3($11),*attrib4($12),
+  @code=${13:3},@allpts=${14:1},@setabsnt=${15:0},@exclude=${16:0},
+  @toleranc=${17:0.001},@checkrot=${18:1},@outside=${19:0}
+]]></content>
+  <tabTrigger>wfcode</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Assign code from wireframes.</description>
+</snippet>

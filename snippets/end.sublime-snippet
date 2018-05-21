@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+!end
+]]></content>
+  <tabTrigger>end</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>End a macro.</description>
+</snippet>

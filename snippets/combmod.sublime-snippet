@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!combmod &proto($1),
+  &in1($2),&in2($3),&in3($4),&in4($5),
+  &modelout($6),
+  @tolernce=${30:0.001}
+]]></content>
+  <tabTrigger>combmod</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Combine block models.</description>
+</snippet>

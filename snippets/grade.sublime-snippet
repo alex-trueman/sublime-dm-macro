@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+!grade &proto($1),&in($2),&model($3),
+  *x(${4:X}),*y(${5:Y}),*z(${6:Z}),*value($7),
+  *numsam($8),*variance($9),*zone($10),*length($11),
+  @sdist1=${12:100},@sdist2=${13:100},@sdist3=${14:100},
+  @sangle1=${15:0},@sangle2=${16:0},@sangle3=${17:0},
+  @saxis1=${18:3},@saxis2=${19:1},@saxis3=${20:3},
+  @minnum=${21:3},@maxnum=${22:20},@minoct=${23:0},@minperoc=${24:1},
+  @maxperoc=${25:0},@imethod=${26:2},@power=${27:2},@nstruct=${28:1},
+  @nugget=${29:0},@st1var=${30:1},@st1rang1=${31:100},@st1rang2=${32:100},
+  @st1rang3=${33:100},@st2var=${34:1},@st2rang1=${35:100},@st2rang2=${36:100},
+  @st2rang3=${37:100},@parent=${38:0},@xpoints=${39:3},@ypoints=${40:3},
+  @zpoints=${41:3},@xsubcell=${42:1},@ysubcell=${43:1},@zsubcell=${44:1},
+  @print=${45:0}
+]]></content>
+  <tabTrigger>grade</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Basic grade estimation.</description>
+</snippet>

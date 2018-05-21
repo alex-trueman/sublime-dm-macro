@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!accmlt &in($1),&out($2),
+  *key1($3),*key2($4),*key3($5),*key4($6),
+  @allrecs=${7:0},@unsorted=${8:1}
+]]></content>
+  <tabTrigger>accmlt</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Accumulate data by key fields.</description>
+</snippet>

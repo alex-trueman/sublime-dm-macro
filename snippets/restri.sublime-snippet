@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!restri &in1($1),&in2($2),&out($3),
+  *key1($4),*key2($5),*key3($6),*key4($7)
+]]></content>
+  <tabTrigger>restri</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Restrict records in table based on second table.</description>
+</snippet>

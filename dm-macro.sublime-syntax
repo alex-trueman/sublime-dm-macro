@@ -1,0 +1,362 @@
+%YAML 1.2
+---
+name: dm-macro
+file_extensions:
+  - mac
+first_line_match: '^\s*!start [a-zA-Z_][a-zA-Z0-9]{0,7}/b'
+scope: source.dm-macro
+
+# Alex Trueman
+
+# Sublime syntax definition for Datamine Studio RM macro language. Currently
+# includes definitions for most syntax and highlights a few common errors.
+
+# Limitations:
+  # - Command names are matched by pattern rather than explicitly so there is no
+  #   checking if the name is an actual command. Maintaining a list of commands
+  #   would be difficult.
+
+# To do:
+  # - Add more checks for illegal syntax.
+  #   - Hanging, missing commas in commands. Missing brackets.
+  # - Add more contexts e.g., for INPFIL, others.
+  #   - For commands would be good for validation checks.
+  # - Test scopes against common colour schemes, currently tested for Material
+  #   theme colour schemes. Should work with most but some schemes may not
+  #   highlight some scopes.
+  # - Add more commands to lists of deprecated and obsoleted commands.
+  # - Add scope for constants in EXTRA e.g., pi, e.
+  # - Treat REM as a comment, will require adjustment to OPSYS context pop.
+  # - Optimize use of scopes naming convention compared with common syntax.
+  # - Investigate multiple scope for matches to handle different colour schemes.
+
+contexts:
+
+  # These contexts will be included in all contexts automatically.
+  prototype:
+
+    - include: comments
+    - include: validations
+    - include: variables
+    - include: strings
+
+  main:
+
+    # Don't automatically include prototype contexts.
+    - meta_include_prototype: false
+
+    - include: comments
+    - include: validations
+
+    # Push IF and ELSEIF macro statement context.
+    - match: (?i)(?=^\s*(!if|!elseif)\s+)
+      push: if
+
+    # Push EXTRA command syntax context.
+    - match: (?i)(?=^\s*!extra\s+)
+      push: extra
+
+    # Push LET command syntax context.
+    - match: (?i)(?=^\s*!let\s+)
+      push: let
+    # LET when part of label (i.e., !label:let)
+    - match: (?i)(?=.+\:let)
+      push: let
+
+    # Push PICREC, PICDIR, PICFLD syntax context.
+    - match: (?i)(?=^\s*(!picrec|!picdir|!picfld)\s+)
+      push: picrec
+
+    # Push OPSYS command syntax context.
+    - match: '(?i)(?=^\s*!opsys\s*$)'
+      push: opsys
+
+    # Windows drive, path, and file.
+    - match: ^\s*([a-z]:\\(?:[^\\/:*?"<>|\r\n]+\\)*[^\\/:*?"<>|\r\n]*)$
+      captures:
+        1: storage.filename
+
+    # Field definitions (e.g., INPFIL).
+    - match: "[a-zA-Z0-9_]{1,8} ([Aa] [0-9]{1,3} [yYnN] '[a-zA-Z0-9_]{0,255}')"
+      captures:
+        1: keyword.operator
+    - match: "[a-zA-Z0-9_]{1,8} ([Nn] [yYnN] [0-9-]+)"
+      captures:
+        1: keyword.operator
+
+    # Include these contexts last to match inside the above captures.
+    - include: variables
+    - include: keywords
+    - include: strings
+
+  variables:
+    # Macro variables.
+
+    # All caps variable (use for global variables and parameters).
+    - match: (\$)([\*@&]{0,1}[[:upper:][:digit:]_]{1,14})(#)
+      captures:
+        1: punctuation.definition.variable
+        2: variable.other.constant
+        3: punctuation.definition.variable
+
+    # Variable in mixed or lower case.
+    - match: (\$)([\*@&]{0,1}[[:alnum:]_]{1,14})(#)
+      captures:
+        1: punctuation.definition.variable
+        2: variable.other.readwrite
+        3: punctuation.definition.variable
+
+  keywords:
+
+    # Flow control labels for GOTO and GOSUB commands.
+    - match: '^\s*(!)([[:word:]]{1}[[:alnum:]_]{0,14})(:)(\w{1,8})\b'
+      captures:
+        1: punctuation.definition.label
+        2: entity.name.label
+        3: punctuation.separator
+        4: variable.function.command
+
+    # Commands are up to 8-characters prefixed by '!' and start with alpha char.
+    - match: '^\s*(!)([[:alpha:]]{1}[[:alnum:]_]{0,7})[[:space:]]*'
+      captures:
+        1: punctuation.definition.variable
+        2: variable.function.command
+
+    # The file name parameter of a command '&'.
+    - match: '(&)([[:alpha:]]{1}[[:alnum:]_]{0,7})\('
+      captures:
+        1: punctuation.definition.variable
+        2: variable.parameter.filename
+
+    # The field name parameter of a command '*'.
+    - match: '(\*)([[:alpha:]]{1}[[:alnum:]_]{0,7})\('
+      captures:
+        1: punctuation.definition.variable
+        2: variable.parameter.fieldname
+
+    # Parameters of a command '@'.
+    - match: '(@)([[:alpha:]]{1}[[:alnum:]_]{0,7})\s*(\=)'
+      captures:
+        1: punctuation.definition.variable
+        2: variable.parameter
+        3: keyword.operator.assignment
+
+  comments:
+  # Single-line comments.
+
+    # A special form (#*) that is bold highlighted.
+    - match: '(#[\*]{1})(.*$)'
+      captures:
+        1: punctuation.definition.comment
+        2: markup.bold
+
+    # Another special form (###) that is highlighted.
+    - match: '(###)(\s.*$)'
+      captures:
+        1: punctuation.definition.comment
+        2: markup.bold
+
+    # TODO comment.
+    - match: '(^#TODO:)(.*$)'
+      captures:
+        1: invalid.illegal
+        2: comment.line
+
+    # Regular comments.
+    - match: "(#)(.*$)"
+      captures:
+        1: punctuation.definition.comment
+        2: comment.line
+
+    # Echo comments.
+    - match: '(!echo |!ECHO |!Echo )(.+)'
+      captures:
+        1: punctuation.definition.comment
+        2: markup.bold
+
+  strings:
+  # Quoted strings. Single-line only.
+
+    - match: '(")([^"]*)(")'
+      captures:
+        1: punctuation.definition.string.begin
+        2: string.quoted.double
+        3: punctuation.definition.string.end
+
+
+    - match: "(')([^']*)(')"
+      captures:
+        1: punctuation.definition.string.begin
+        2: string.quoted.single
+        3: punctuation.definition.string.end
+
+  validations:
+  # Some simple checks for common issues.
+
+    # Line too long.
+    - match: .{81,}
+      scope: invalid.illegal.toolong
+    # Variable too long.
+    - match: \$[a-zA-Z0-9_]{15,}#
+      scope: invalid.illegal.toolong
+    # Label too long.
+    - match: '^\s*(![a-zA-Z_][a-zA-Z0-9_]{15,}:\w{1,8})\b'
+      captures:
+        1: invalid.illegal.toolong
+    # DM table name longer than 20 characters.
+    - match: '(?:&.+\()([^\)\$]{21,})\)'
+      captures:
+        1: invalid.illegal.toolong
+    # Field name longer than 8 characters.
+    - match: '(?:\*.+\()([^\)\$]{9,})\)'
+      captures:
+        1: invalid.illegal.toolong
+
+    # Label without command.
+    - match: '^\s*(![a-zA-Z_][a-zA-Z0-9_]{0,14}:\s+)'
+      scope: invalid.illegal.syntax
+
+    # Variable with illegal characters.
+    - match: \$\w*[\s+]+\w*#
+      scope: invalid.illegal.badcharacters
+    # DM table name with illegal characters.
+    - match: '(?:&.+\()([^\)]*[\\/<>:\"\|\?\*\s]+[^\)]*)\)'
+      captures:
+        1: invalid.illegal.badcharacters
+    # Field name with illegal characters.
+    - match: '(?:\*.+\()([\w-]*[,!:\*&\=\(\)\s]+[\w-]*)\)'
+      captures:
+        1: invalid.illegal.badcharacters
+    # Field name with illegal start character.
+    - match: '(?:\*.+\()([@?\.]+\w*)\)'
+      captures:
+        1: invalid.illegal.badcharacters
+
+    # Deprecated commands (still supported but shouldn't use).
+    - match: '(?i)^\s*(!(aed|gentra))\b'
+      scope: invalid.deprecated.command
+
+    # Obsolete commands (no longer valid, will break macro).
+    - match: '(?i)^\s*(!(anyjoi|vardir|varhol|trianr|digit))\b'
+      scope: invalid.deprecated.obsolete.command
+
+  let:
+  # LET statement keywords.
+
+    - match: (?i)\b(env|evar|indx|leng|lwc|subs|upc|sqrt|exp|log|loge|logn|int|sin|cos|tan|asin|acos|atan|abs|mod|rais|max|min)(?=\()\b
+      scope: variable.language
+
+    # Arithmetic operators.
+    - match: (?=\w*)[^-\+\*\/\=]([-\+\*\/\=]{1})[^-\+\*\/\=](?=\w*)
+      captures:
+        1: keyword.operator.arithmetic
+
+    - include: keywords
+
+    - match: $
+      pop: true
+
+  extra:
+  # EXTRA command syntax.
+
+    # Do some simple validation for common errors.
+    # Single instead of double equal sign in 'if/elseif' statement.
+    - match: '(?:\s*if\s*\([^\)]+)([^=<>!]\=[^=])(?:[^\)]+\))'
+      captures:
+        1: invalid.illegal.syntax
+    - match: '(?:\s*elseif\s*\([^\)]+)([^=<>!]\=[^=])(?:[^\)]+\))'
+      captures:
+        1: invalid.illegal.syntax
+
+    # Keywords.
+    - match: (?i)\b(abs|absent|acos|and|asin|atan|cos|exp|int|log|loge|logn|max|min|mod|modc|or|phi|pow|rais|round|sin|special|sqrt|tan|prev|next|first|last|default|decode|field|join|lcase|len|match|string|substr|trim|ucase|erase|saveonly|delete|if|else|elseif|end)(?=(\(|\s*))\b
+      scope: variable.language
+
+    # Field definition syntax.
+    - match: (?i);a[0-9]{1,3}\b
+      scope: keyword.other
+    - match: (?i);n\b
+      scope: keyword.other
+
+    # Comparison operators in if/elseif.
+    - match: (?=\w*)[^\=\>\<]([\>\<]{1}|[\=]{2}|\>\=|\<\=|!=)[^\=\>\<](?=\w*)
+      captures:
+        1: keyword.operator.logical
+
+    # Arithmetic operators.
+    - match: (?=\w*)[^-\+\*\/\=]([-\+\*\/\=]{1})[^-\+\*\/\=](?=\w*)
+      captures:
+        1: keyword.operator.arithmetic
+
+    - include: keywords
+
+    # Must not include 'go' keywords list as it will not be re-matched here.
+    # Add scope here to make sure it still gets highlighted.
+    - match: '(?i)\bgo\b'
+      scope: variable.language
+      pop: true
+
+  if:
+  # IF and ELSEIF macro commands.
+
+    # Do some simple validation for common errors.
+    - match: '(==|!=)'
+      scope: invalid.illegal.syntax
+
+    # Keywords.
+    - match: (?i)\b(goto|gosub|let|then)\b
+      scope: variable.language
+
+    # Comparison operators.
+    - match: '(>|<|=|>=|<=|<>)'
+      scope: keyword.operator.logical
+
+    - include: keywords
+
+    - match: $
+      pop: true
+
+  picrec:
+  # PICREC, PICDIR, PICFLD
+
+    # Do some simple validation for common errors.
+    - match: '(==|!=)'
+      scope: invalid.illegal.syntax
+
+    # Keywords (common forms only, only first three or more characters required)
+    - match: (?i)\b(alphanumeric|alpha|explicit|exp|field|fie|file|implicit|imp|constant|const|con|matches|match|mat|numeric|num|regexp|regex|reg|not|and|or)\b
+      scope: variable.language
+
+    # Comparison operators.
+    - match: '(>|<|=|>=|<=|<>)'
+      scope: keyword.operator.logical
+
+    - include: keywords
+
+    # Must not include 'end' in list above as it will not be re-matched here.
+    # Add scope here to make sure it still gets highlighted.
+    - match: '(?i)\bend\b'
+      scope: variable.language
+      pop: true
+
+  opsys:
+  # OPSS commands (i.e., DOS batch).
+
+    # DOS commands.
+    - match: (?i)\b(append|assign|assoc|atattrib|backup|basic|basica|break|cacls|call|cd|chcp|chdir|chkdsk|chkntfs|choice|cls|cmd|color|comp|compact|convert|copy|ctty|date|defrag|del|deltree|dir|diskcomp|diskcopy|doskey|echo|edit|edlin|endlocal|erase|exe2bin|exit|fastopen|fc|fdisk|find|findstr|for|format|ftype|graftabl|graphics|help|interlnk|intersvr|join|keyb|label|lh|loadfix|loadhigh|md|mem|memmaker|mkdir|mode|more|move|msd|path|pause|popd|print|prompt|pushd|rd|recover|rem|ren|rename|replace|restore|rmdir|scandisk|set|setlocal|setver|share|shift|smartdrv|sort|start|subst|sys|time|title|tree|truename|type|undelete|ver|verify|vol|xcopy)\b
+      scope: variable.language
+
+    # Command switches.
+    - match: (?i)\/\w+
+      scope: keyword.other
+
+    # Redirection and piping.
+    - match: (?i)[\>\<\|]
+      scope: keyword.other
+
+    - match: '(?i)(?=\s*!rem)'
+      pop: true
+    - include: keywords # Include here so that REM is unmatched for pop.
+...
+
+

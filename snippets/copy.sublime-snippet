@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+!copy &in($1),&out($2)
+]]></content>
+  <tabTrigger>copy</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Copy a file.</description>
+</snippet>

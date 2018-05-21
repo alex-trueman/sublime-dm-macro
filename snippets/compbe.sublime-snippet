@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+!compbe &in($1),&out($2),
+  *bhid(${3:BHID}),*from(${4:FROM}),*to(${5:TO}),*density(${6:DENSITY}),
+  *coreloss(${7:CORELOSS}),*corerec(${8:COREREC}),*zone($9),
+  @interval=$10,@mingap=${11:0.05},@maxgap=${12:0},@elev=${13:0},
+  @mincomp=$14,@maxcomp=$15,@loss=${16:0},@print=${17:0}
+]]></content>
+  <tabTrigger>compbe</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Composite over benches.</description>
+</snippet>

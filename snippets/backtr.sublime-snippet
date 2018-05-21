@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!backtr &in1($1),&refdist($2),&out($3)
+  *normval($4),*origref($5),*normref($6),*backval($7),
+  @minnorm=$8,@maxnorm=$9,@minback=$10,@maxback=$11,
+  @lotail=${12:1},@lopar=$13,@uptail=${14:2},@uppar=$15
+]]></content>
+  <tabTrigger>backtr</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Back-transformation from normal distribution.</description>
+</snippet>

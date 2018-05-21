@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!addtri &wiretr1($1tr),&wirept1($1pt),
+  &wiretr2($2tr),&wirept2($2pt),
+  &wiretrou($3tr),&wireptou($3pt)
+]]></content>
+  <tabTrigger>addtri</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Combine two wireframe files.</description>
+</snippet>

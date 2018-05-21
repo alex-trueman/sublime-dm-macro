@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!discla &in($1),&infuncts($2),&incentrd($3),&out($4),
+  *groupid($5),*sampid($6),
+  *f1($7),*f2($8),*f3($9),*f4($10)
+]]></content>
+  <tabTrigger>discla</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Discriminant function classification.</description>
+</snippet>

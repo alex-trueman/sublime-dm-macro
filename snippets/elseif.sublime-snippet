@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!elseif $1,then
+  $2
+]]></content>
+  <tabTrigger>elseif</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Conditional control in IF statement.</description>
+</snippet>

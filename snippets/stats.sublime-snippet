@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!stats &in($1),&fieldlst($2),&out($3),
+  *key1($4),*key2($5),*key3($6),*key4($7),
+  *f1($8),*f2($9),*f3($10),*f4($11),
+  *weight($12),*fieldnam(${13:FIELDNAM})
+]]></content>
+  <tabTrigger>stats</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Calculate basic statistics.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!holmer &in1($1),&in2($2),&out($3),
+  *bhid(${4:BHID}),*from(${5:FROM}),*to(${6:TO})
+]]></content>
+  <tabTrigger>holmer</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Merge drillhole tables maintaining intervals.</description>
+</snippet>

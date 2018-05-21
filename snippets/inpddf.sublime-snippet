@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!inpddf &out($1)
+# Add sysfile here
+!rem
+]]></content>
+  <tabTrigger>inpddf</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Import ASC data to new table.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!clustr &in($1),&matxin($2),
+  *sampid($3),*f1($4),*f2($5),*f3($6),*f4($7),
+  @mattype=$8,@ztran=$9
+]]></content>
+  <tabTrigger>clustr</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Cluster analysis.</description>
+</snippet>

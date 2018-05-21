@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!aptotrue &in($1),&out($2),
+  *apdip(${3:APDIP}),*trdipdir(${4:TRDIPDIR}),*trdip(${5:TRDIP}),
+  @apdipdir=${6:0}
+]]></content>
+  <tabTrigger>aptotrue</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Convert apparent to true dip.</description>
+</snippet>

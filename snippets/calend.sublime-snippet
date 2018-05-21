@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!calend &holiday($1),&calendar($2),
+  @caltype=${5:1}
+]]></content>
+  <tabTrigger>calend</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Create calendar file for PRODSH.</description>
+</snippet>

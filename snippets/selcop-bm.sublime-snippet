@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+!selcop &in($1),&out($3),
+  *f1(IJK),*f2(XC),*f3(YC),*f4(ZC),
+  *f5(XINC),*f6(YINC),*f7(ZINC),*f8(NX),
+  *f9(NY),*f10(NZ),*f11(XMORIG),*f12(YMORIG),
+  *f13(ZMORIG),*f14($4),*f15($5),*f16($6),
+  *f17($7),*f18($8),*f19($9),*f20($10),
+  *f21($11),*f22($12),*f23($13),*f24($14),
+  @keepall=${15:0}
+]]></content>
+  <tabTrigger>selcop_bm</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Copy file with block model fields.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!extra &in($1),&out($2)
+  $3
+  go
+]]></content>
+  <tabTrigger>extra</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Advanced calculator.</description>
+</snippet>

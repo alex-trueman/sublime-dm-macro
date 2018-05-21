@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!extend &in($1)
+${3:sysfile or blank line}
+${4:comma delimited data or blank line}
+!rem
+]]></content>
+  <tabTrigger>extend</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Add data rows to a table</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+# Create proportional model.
+  !let \$file_in# = $1
+  !let \$file_out# = ${2:xx_propmod}
+  !let \$field_grade# = ${3:AU_PPM}
+  !let \$field_category# = ${4:DOMAIN}
+  !let \$proto_in# = ${5:xx_smu_prototype}
+  !varsave xx_propmod.txt,@merge=0,
+    \$file_in#,\$file_out#,\$field_grade#,\$field_category#,\$proto_in#
+  !xrun
+  mdl_utility.mac
+  PropMod
+]]></content>
+  <tabTrigger>propmod</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Create proportional model.</description>
+</snippet>

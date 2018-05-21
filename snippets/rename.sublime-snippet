@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!rename &in($1),&out($2),
+  @delete=${3:1}
+]]></content>
+  <tabTrigger>rename</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Rename a file.</description>
+</snippet>

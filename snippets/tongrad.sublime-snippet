@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+!tongrad &in($1),&out($2),
+  &csvout($3),&tgcumtiv($4),
+  *key1($5),*key2($6),*key3($7),*key4($8),
+  *f1($9),*f2($10),*f3($11),*f4($12),
+  *addf1($13),*addf2($14),*addf3($15),*addf4($16),
+  *orefrac($17),*density($18),
+  @factor=${19:1},@trename=${20:0},@setabsnt=${21:0},
+  @density=${22:1},@column=$23,@row=$24,@bench=$25,
+  @cogstep=$26
+
+# &in* model file, &out* grade-tonnage data; &csvout output
+# CSV grade-tonnage data; &tgcumtiv cummulative grade-
+# tonnage data; *key1...5 key fields; *f1...60 fields
+# that are averaged (*f1 is primary field to which cut-off
+# is applied); *add1...20 fields that are accumulated;
+# *orefrac ore fraction from 0 to 1; *density density field;
+# @factor divide volume and tonnage by this factor;
+# @trename rename tonnes field for @factor > 1; @setabsnt
+# allow reset of absent grade and density; @density constant
+# to use if field not present or field is absent; @column, @row,
+# @bench categorize by column, row, or bench; @cogstep cut-off
+# increment applied to *f1.
+]]></content>
+  <tabTrigger>tongrad</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Calculate basic statistics.</description>
+</snippet>

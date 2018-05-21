@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!perfil &proto($1),&perimin($2),&model($3),
+  *dplus($4),*dminus($5),
+  *attrib1($6),*attrib2($7),*attrib3($8),*attrib4($9),
+  @mode=${10:0},@dplus=$11,@dminus=$12,@plane=${13:'XY'},
+  @zone=${14:0},@optimise=${15:2},@fullcell=${15:0},
+  @xsubcell=${16:1},@ysubcell=${17:1},@zsubcell=${18:1},
+  @pvalue=$19,@resol=${20:0},@ovcheck=${21,1}
+]]></content>
+  <tabTrigger>perfil</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Fill perimeters with blocks.</description>
+</snippet>

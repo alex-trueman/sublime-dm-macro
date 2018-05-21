@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+!estima &proto($1),&in($2),
+  &srcparm(${3:xxspar}),&estparm(${4:xxepar}),&vmodparm(${5:xxvpar}),
+  &string($6),&model($7),&sampout($8),
+  *x(${9:X}),*y(${10:Y}),*z(${11:Z}),*zone1_f($12),*zone2_f($13),
+  *key(${14:BHID}),*length_f($15),*dens_f($16),*section(${17:SECTION}),
+  *boundary(${18:BOUNDARY}),*wstag($19),*tag($20),
+  @discmeth=${21:1},@xpoints=${22:1},@ypoints=${23:1},@zpoints=${24:1},
+  @xdspace=$25,@ydspace=$26,@zdspace=$27,@parent=${28:1},
+  @dyankr=${29:1},@mindisc=${30:1},@copyval=${31:0},@fvaltype=${32:1},
+  @fstep=$33,@xmin=$34,@xmax=$35,@ymin=$36,@ymax=$37,@ymin=$38,@ymax=$39,
+  @xsubcell=${40:1},@ysubcell=${41:1},@zsubcell=${42:1},@allwgts=${43:0},
+  @linkmode=${44:3},@ucsamode=${45:2},@ucsbmode=${46:3},@ucscmode=${47:2},
+  @plane=${48:1},@hangid=$49,@footid=$50,@tolrnc=${51:0},
+  @orgtag=${52:-},@print=${53:0}
+]]></content>
+  <tabTrigger>estima</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Block model grade estimation - all options.</description>
+</snippet>

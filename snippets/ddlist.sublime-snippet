@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+!ddlist &in($1)
+]]></content>
+  <tabTrigger>ddlist</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Display data definition.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!anisoang &planstr($1),&sectstr($2),
+  &wiretr($3tr),&wirept($3pt),&points($4),
+  *zone($5),
+  @tripts=${6:1},@planmode=${7:1},@sectmode=${8:1},
+  @mindip=${9:-90},@maxdip=${10:90},@mindirn=$11,@maxdirn=$12,
+  @addsymb=${13:0},@plansymb=${14:216},@sectsymb=${15:216},@wfsymb=${16:224},
+  @plancol=${17:1},@sectcol=${18:2},@wfcol=${19:3},@symsize=${20:2}
+]]></content>
+  <tabTrigger>anisoang</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Calculate anisotropy angle data for ESTIMA.</description>
+</snippet>

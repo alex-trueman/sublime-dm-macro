@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+!let \$i# = 0
+!loop:let \$i# = {\$i# + 1}
+
+  !field \$exists# = $1, \$count# = \$i#,
+    ${2:\$field#} = ${3:FIELD}
+
+  Actions to be repeated go here
+
+!if \$i# < \$count#, goto loop
+]]></content>
+  <tabTrigger>loop</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Macro loop.</description>
+</snippet>

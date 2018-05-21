@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+!trifil &proto($1),&model($2),
+  &perimin($3),&wiretr($4tr),&wirept($4pt),
+  *zone($5),
+  @modltype=${6:1},@zone=$7,@maxdip=${8:0},
+  @splits=${9:0},@plane=${10:'XY'},
+  @xsubcell=${11:1},@ysubcell=${12:1},@zsubcell=${13:1},@resol=${14:1},
+  @pvalue=$15,@autosort=${16:1}
+]]></content>
+  <tabTrigger>trifil</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Create blocks using wireframes.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!astran &in($1),&xref($2),
+  *sampleid(${3:SAMPLEID}),
+  @sprefix=${4:2},@sdigits=${5:6},@maxerrs=$6,@update=${7:0}
+]]></content>
+  <tabTrigger>astran</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Transfer assay data to Datamine.</description>
+</snippet>

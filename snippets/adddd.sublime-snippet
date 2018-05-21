@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+!adddd &in($1),&out($2)
+${3:file description}
+${4:FIELD1 n y -}
+${5:FIELD2 a 8 y ''}
+]
+y
+]]></content>
+  <tabTrigger>adddd</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Add new fields to a file.</description>
+</snippet>

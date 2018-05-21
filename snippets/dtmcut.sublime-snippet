@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+!dtmcut &wiretr1($1tr),&wirept1($1pt),&wiretr2($2tr),&wirept2($2pt),
+  &proto($3),&perimin($4),&cutmodou($5),&results($6),
+  *density($7),*cutfld($8),*attrib($9),
+  @cutden=${10:1},@fillden=${11:1},@splits=${12:0},@cutval=${13:-1},
+  @fillval=${14:1}
+]]></content>
+  <tabTrigger>dtmcut</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Evaluate model between DTMs.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!field ${1:\$ex#},${2:\$count#=\$recs#},
+  ${3:\$field#=FIELD}
+]]></content>
+  <tabTrigger>field</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Get information from a file.</description>
+</snippet>

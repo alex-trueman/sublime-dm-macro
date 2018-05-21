@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!dilute &in($1),&out($2),
+  *bhid(${3:BHID}),*from(${4:FROM}),*to(${5:TO}),*seamid(${6:SEAMID}),
+  @dilup=$7,@dildown=$8,@thinnest=$9
+]]></content>
+  <tabTrigger>dilute</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Computes downhole dilution envelopes.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+!bhcount &modelin($1),&sampin($2),&modelout($3),
+  *key(${4:BHID},*value($5),
+  @parent=${6:1}
+]]></content>
+  <tabTrigger>bhcount</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Count of drillholes to estimate each block.</description>
+</snippet>

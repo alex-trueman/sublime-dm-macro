@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+!protom &out($1),
+  @rotmod=0
+n # mined out field
+n # sub-cells
+XMORIG
+YMORIG
+ZMORIG
+XINC
+YINC
+ZINC
+XN
+YN
+ZN
+!rem
+]]></content>
+  <tabTrigger>protom</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Model prototype.</description>
+</snippet>

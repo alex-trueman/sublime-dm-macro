@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+!swathplt &model($1),&sample($2),
+  &swath1($3),&swath2($4),&swathstr($5),
+  *zonefld($6),@zoneval=$7,
+  *samplex(${8:X}),*sampley(${9:Y}),*samplez(${10:Z}),
+  *grade1($11),*grade2($12),*grade3($13),*grade4($14),
+  *sgrade1($15),*sgrade2($16),*sgrade3($17),*sgrade4($18),
+  *dcweight($19),
+  @directn=${20:1},@width=$21,@csvout1=${22:0},@csvout2=${23:1}
+
+# &model* required model file; &sample optional sample file;
+# &swath1* for Datamine plotting; &swath2* for other plotting;
+# &swathstr for strings of slices with grades; *zonefld and @zoneval
+# for filtering the data based on a numeric zone field; *samplex...z
+# for defining coordinate fields of sample data; *grade1*...10 are
+# the grade fields in the model file (and sample file); *sgrade1...10
+# are the grade fields only in the sample file; *dcweight for
+# weighting of sample grades; @directn* swath axis (1:X, 2:Y, #:Z);
+# @width width of slices; @csvout1 for CSV output of $swath1;
+# @csvout2 for CSV output of &swath2.
+]]></content>
+  <tabTrigger>swathplt</tabTrigger>
+  <scope>source.dm_macro</scope>
+  <description>Create swath plot data.</description>
+</snippet>
