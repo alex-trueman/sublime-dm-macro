@@ -21,6 +21,11 @@
                                 "caption": "README"
                             },
                             {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/sublime-dm-macro/LICENSE"},
+                                "caption": "LICENSE"
+                            },
+                            {
                                 "caption": "-"
                             },
                             {
