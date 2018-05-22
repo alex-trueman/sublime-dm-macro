@@ -26,6 +26,11 @@
                                 "caption": "LICENSE"
                             },
                             {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/sublime-dm-macro/RELEASE.md"},
+                                "caption": "Release notes"
+                            },
+                            {
                                 "caption": "-"
                             },
                             {
