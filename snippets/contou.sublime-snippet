@@ -9,6 +9,6 @@
   @ymin=$21,@ymax=$22,@xscale=$23,@yscale=$24
 ]]></content>
   <tabTrigger>contou</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Contours from block model.</description>
 </snippet>

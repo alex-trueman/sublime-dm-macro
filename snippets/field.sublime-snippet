@@ -4,6 +4,6 @@
   ${3:\$field#=FIELD}
 ]]></content>
   <tabTrigger>field</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Get information from a file.</description>
 </snippet>

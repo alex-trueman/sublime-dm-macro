@@ -5,6 +5,6 @@
   @mattype=$8,@ztran=$9
 ]]></content>
   <tabTrigger>clustr</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Cluster analysis.</description>
 </snippet>

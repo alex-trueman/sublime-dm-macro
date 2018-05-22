@@ -6,6 +6,6 @@
   @resum=${11:0},@primat=${12:0},@prisco=${13:0}
 ]]></content>
   <tabTrigger>discan</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Discriminant function analysis.</description>
 </snippet>

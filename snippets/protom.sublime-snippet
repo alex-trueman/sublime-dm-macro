@@ -16,6 +16,6 @@ ZN
 !rem
 ]]></content>
   <tabTrigger>protom</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Model prototype.</description>
 </snippet>

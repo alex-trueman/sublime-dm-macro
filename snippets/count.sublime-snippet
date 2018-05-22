@@ -5,6 +5,6 @@
   @keysort=${7:1}
 ]]></content>
   <tabTrigger>count</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Count records by key field.</description>
 </snippet>

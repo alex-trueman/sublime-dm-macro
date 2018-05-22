@@ -16,6 +16,6 @@
   @orgtag=${52:-},@print=${53:0}
 ]]></content>
   <tabTrigger>estima</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Block model grade estimation - all options.</description>
 </snippet>

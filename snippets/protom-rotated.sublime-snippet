@@ -25,6 +25,6 @@ ZN
 !rem
 ]]></content>
   <tabTrigger>protom_rot</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Model prototype for rotated model.</description>
 </snippet>

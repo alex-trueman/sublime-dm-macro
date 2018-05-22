@@ -9,6 +9,6 @@
   @print=${19:0}
 ]]></content>
   <tabTrigger>compdh</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Composite drillholes downhole by zones.</description>
 </snippet>

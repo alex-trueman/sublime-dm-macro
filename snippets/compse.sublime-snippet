@@ -6,6 +6,6 @@
   @dilute=${8:1},@narwaste=${9:1}
 ]]></content>
   <tabTrigger>compse</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Composite using ore/waste criteria.</description>
 </snippet>

@@ -6,6 +6,6 @@
   @order=${9:0},@surface=${10:3},@colour=${11:1}
 ]]></content>
   <tabTrigger>blktri</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Wireframes around blocks.</description>
 </snippet>

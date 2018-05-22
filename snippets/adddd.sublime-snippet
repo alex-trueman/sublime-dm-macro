@@ -8,6 +8,6 @@ ${5:FIELD2 a 8 y ''}
 y
 ]]></content>
   <tabTrigger>adddd</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Add new fields to a file.</description>
 </snippet>

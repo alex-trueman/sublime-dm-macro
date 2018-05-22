@@ -21,6 +21,6 @@
 # @setabsnt use @density to assign density where *density is absent.
 ]]></content>
   <tabTrigger>reblock</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Re-block a model.</description>
 </snippet>

@@ -6,6 +6,6 @@
   @mode=${12:0},@inrange=${13:0}
 ]]></content>
   <tabTrigger>attset</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Set values of nominated attribute fields.</description>
 </snippet>

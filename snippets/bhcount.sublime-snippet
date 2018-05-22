@@ -5,6 +5,6 @@
   @parent=${6:1}
 ]]></content>
   <tabTrigger>bhcount</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Count of drillholes to estimate each block.</description>
 </snippet>

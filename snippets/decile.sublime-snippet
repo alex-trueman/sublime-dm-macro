@@ -5,6 +5,6 @@
   @cutoff=$7,@topcut=${8:0},@tcutoff=$9,@criteria=$10
 ]]></content>
   <tabTrigger>decile</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Calculate deciles.</description>
 </snippet>

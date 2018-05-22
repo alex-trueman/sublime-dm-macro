@@ -6,6 +6,6 @@
   *weight($12),*fieldnam(${13:FIELDNAM})
 ]]></content>
   <tabTrigger>stats</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Calculate basic statistics.</description>
 </snippet>

@@ -5,6 +5,6 @@
   @ndp=${4:0},@maxfiles=${5:50}
 ]]></content>
   <tabTrigger>split</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Split file by key field.</description>
 </snippet>

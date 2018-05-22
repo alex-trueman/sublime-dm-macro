@@ -4,6 +4,6 @@
   &apphlp($3),&out($4)
 ]]></content>
   <tabTrigger>aed</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Deprecated text editor.</description>
 </snippet>

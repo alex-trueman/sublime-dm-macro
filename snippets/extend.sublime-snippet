@@ -6,6 +6,6 @@ ${4:comma delimited data or blank line}
 !rem
 ]]></content>
   <tabTrigger>extend</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Add data rows to a table</description>
 </snippet>

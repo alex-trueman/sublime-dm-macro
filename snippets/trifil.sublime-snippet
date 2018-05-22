@@ -9,6 +9,6 @@
   @pvalue=$15,@autosort=${16:1}
 ]]></content>
   <tabTrigger>trifil</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Create blocks using wireframes.</description>
 </snippet>

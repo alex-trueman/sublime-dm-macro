@@ -7,6 +7,6 @@
   @fillval=${14:1}
 ]]></content>
   <tabTrigger>dtmcut</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Evaluate model between DTMs.</description>
 </snippet>

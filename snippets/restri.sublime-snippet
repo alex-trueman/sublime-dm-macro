@@ -4,6 +4,6 @@
   *key1($4),*key2($5),*key3($6),*key4($7)
 ]]></content>
   <tabTrigger>restri</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Restrict records in table based on second table.</description>
 </snippet>

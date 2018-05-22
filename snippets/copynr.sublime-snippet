@@ -4,6 +4,6 @@
   @base=$3,@incrment=$4
 ]]></content>
   <tabTrigger>copynr</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Copy a file adding a record number field.</description>
 </snippet>

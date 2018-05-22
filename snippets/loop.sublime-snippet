@@ -11,6 +11,6 @@
 !if \$i# < \$count#, goto loop
 ]]></content>
   <tabTrigger>loop</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Macro loop.</description>
 </snippet>

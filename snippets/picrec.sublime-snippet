@@ -6,6 +6,6 @@
 ${10:filter syntax end}
 ]]></content>
   <tabTrigger>picrec</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Filter a table.</description>
 </snippet>

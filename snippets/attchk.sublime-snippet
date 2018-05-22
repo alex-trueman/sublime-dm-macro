@@ -3,6 +3,6 @@
 !attchk &in($1),&out($2),&error($3)
 ]]></content>
   <tabTrigger>attchk</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Check legend definition file.</description>
 </snippet>

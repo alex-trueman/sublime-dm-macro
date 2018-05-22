@@ -3,6 +3,6 @@
 !checkit &in($1),&out($2)
 ]]></content>
   <tabTrigger>checkit</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Validate a string file.</description>
 </snippet>

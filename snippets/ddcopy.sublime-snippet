@@ -3,6 +3,6 @@
 !ddcopy &in($1),&out($2)
 ]]></content>
   <tabTrigger>ddcopy</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Copy a data definition.</description>
 </snippet>

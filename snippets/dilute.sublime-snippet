@@ -5,6 +5,6 @@
   @dilup=$7,@dildown=$8,@thinnest=$9
 ]]></content>
   <tabTrigger>dilute</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Computes downhole dilution envelopes.</description>
 </snippet>

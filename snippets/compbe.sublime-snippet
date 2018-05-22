@@ -7,6 +7,6 @@
   @mincomp=$14,@maxcomp=$15,@loss=${16:0},@print=${17:0}
 ]]></content>
   <tabTrigger>compbe</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Composite over benches.</description>
 </snippet>

@@ -8,6 +8,6 @@
   @hilioght=$16,@hicolour=${17:2},@colour=${18:1}
 ]]></content>
   <tabTrigger>contst</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Contours from block model to strings.</description>
 </snippet>

@@ -9,6 +9,6 @@
   @plancol=${17:1},@sectcol=${18:2},@wfcol=${19:3},@symsize=${20:2}
 ]]></content>
   <tabTrigger>anisoang</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Calculate anisotropy angle data for ESTIMA.</description>
 </snippet>

@@ -5,6 +5,6 @@
   *f1($7),*f2($8),*f3($9),*f4($10)
 ]]></content>
   <tabTrigger>mod2xyz</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Migrate from model to points.</description>
 </snippet>

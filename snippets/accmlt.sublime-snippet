@@ -5,6 +5,6 @@
   @allrecs=${7:0},@unsorted=${8:1}
 ]]></content>
   <tabTrigger>accmlt</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Accumulate data by key fields.</description>
 </snippet>

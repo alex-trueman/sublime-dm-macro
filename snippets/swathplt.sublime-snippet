@@ -21,6 +21,6 @@
 # @csvout2 for CSV output of &swath2.
 ]]></content>
   <tabTrigger>swathplt</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Create swath plot data.</description>
 </snippet>

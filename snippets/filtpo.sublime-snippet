@@ -5,6 +5,6 @@
   @radius=${7:0}
 ]]></content>
   <tabTrigger>filtpo</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Filter out adjacent points</description>
 </snippet>

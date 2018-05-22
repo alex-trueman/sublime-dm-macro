@@ -5,6 +5,6 @@
   &wiretrou($3tr),&wireptou($3pt)
 ]]></content>
   <tabTrigger>addtri</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Combine two wireframe files.</description>
 </snippet>

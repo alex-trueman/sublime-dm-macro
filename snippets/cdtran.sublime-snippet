@@ -9,6 +9,6 @@
   @factor=${22:1},@inverse=${23:0},@print=${24:0}
 ]]></content>
   <tabTrigger>cdtran</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Coordinate transformation.</description>
 </snippet>

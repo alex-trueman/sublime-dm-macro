@@ -24,6 +24,6 @@
 # increment applied to *f1.
 ]]></content>
   <tabTrigger>tongrad</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Calculate basic statistics.</description>
 </snippet>

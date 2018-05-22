@@ -5,6 +5,6 @@
   *f1($7),*f2($8),*f3($9),*f4($10)
 ]]></content>
   <tabTrigger>discla</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Discriminant function classification.</description>
 </snippet>

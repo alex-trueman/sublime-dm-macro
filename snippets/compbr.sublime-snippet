@@ -9,6 +9,6 @@
   @print=${19:0}
 ]]></content>
   <tabTrigger>compbr</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Composite over benches with selectivity.</description>
 </snippet>

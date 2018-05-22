@@ -13,6 +13,6 @@
   PropMod
 ]]></content>
   <tabTrigger>propmod</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Create proportional model.</description>
 </snippet>

@@ -5,6 +5,6 @@
   @smooth=${7:0},@connect=${8:1},@bradjust=${9:0}
 ]]></content>
   <tabTrigger>blkper</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Perimeters around blocks.</description>
 </snippet>

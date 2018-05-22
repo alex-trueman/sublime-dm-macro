@@ -19,6 +19,6 @@ ${17:format}
 ]
 ]]></content>
   <tabTrigger>report</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Formatted tabulation.</description>
 </snippet>

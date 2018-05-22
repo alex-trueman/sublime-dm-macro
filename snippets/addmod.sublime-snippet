@@ -4,6 +4,6 @@
   @tolernce=${4:0.001}
 ]]></content>
   <tabTrigger>addmod</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Combine two block models.</description>
 </snippet>

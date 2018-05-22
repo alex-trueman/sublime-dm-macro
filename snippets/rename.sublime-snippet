@@ -4,6 +4,6 @@
   @delete=${3:1}
 ]]></content>
   <tabTrigger>rename</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Rename a file.</description>
 </snippet>

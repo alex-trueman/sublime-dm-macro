@@ -17,6 +17,6 @@
   @progress=${53:1},@display=${54:1}
 ]]></content>
   <tabTrigger>chart</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Create statistical charts.</description>
 </snippet>

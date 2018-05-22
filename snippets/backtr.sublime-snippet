@@ -6,6 +6,6 @@
   @lotail=${12:1},@lopar=$13,@uptail=${14:2},@uppar=$15
 ]]></content>
   <tabTrigger>backtr</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Back-transformation from normal distribution.</description>
 </snippet>

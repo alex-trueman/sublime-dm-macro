@@ -18,6 +18,6 @@
 8 = outside two wireframe surfaces
 ]]></content>
   <tabTrigger>selwf</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Select using wireframes.</description>
 </snippet>

@@ -8,6 +8,6 @@
   @print=${17:0}
 ]]></content>
   <tabTrigger>promod</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Optimize a block model.</description>
 </snippet>

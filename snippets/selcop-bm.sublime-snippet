@@ -10,6 +10,6 @@
   @keepall=${15:0}
 ]]></content>
   <tabTrigger>selcop_bm</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Copy file with block model fields.</description>
 </snippet>

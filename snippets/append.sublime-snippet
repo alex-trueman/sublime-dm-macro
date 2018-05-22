@@ -4,6 +4,6 @@
   @sequence=${4:0},@protodd=${5:0},@print=${6:0}
 ]]></content>
   <tabTrigger>append</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Append two or more files.</description>
 </snippet>

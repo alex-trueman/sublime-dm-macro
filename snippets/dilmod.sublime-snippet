@@ -16,6 +16,6 @@
   DilMod
 ]]></content>
   <tabTrigger>dilmod</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Apply skin dilution to model.</description>
 </snippet>

@@ -3,6 +3,6 @@
 !slimod &proto($1),&in($2),&out($3)
 ]]></content>
   <tabTrigger>slimod</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Change block model prototype.</description>
 </snippet>

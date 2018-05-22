@@ -11,6 +11,6 @@ Enter data here or not.
 !rem
 ]]></content>
   <tabTrigger>inpfil</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Import CSV data to new table.</description>
 </snippet>

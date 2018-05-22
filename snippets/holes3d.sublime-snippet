@@ -9,6 +9,6 @@
   @survsmth=1,@endpoint=0,@prompt=1,@dipmeth=1,@print=0
 ]]></content>
   <tabTrigger>holes3d</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Generate static drillholes</description>
 </snippet>

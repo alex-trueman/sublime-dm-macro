@@ -15,6 +15,6 @@
   grpstat
     ]]></content>
   <tabTrigger>groupstats</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Stats by category.</description>
 </snippet>

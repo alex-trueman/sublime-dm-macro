@@ -5,6 +5,6 @@
   @remdupid=${3:0}
 ]]></content>
   <tabTrigger>chktri</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Check wireframe files.</description>
 </snippet>

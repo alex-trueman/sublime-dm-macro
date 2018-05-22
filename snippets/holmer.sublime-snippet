@@ -4,6 +4,6 @@
   *bhid(${4:BHID}),*from(${5:FROM}),*to(${6:TO})
 ]]></content>
   <tabTrigger>holmer</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Merge drillhole tables maintaining intervals.</description>
 </snippet>

@@ -5,6 +5,6 @@
   @order=1,@keyfrst=0,@roworder=0
 ]]></content>
   <tabTrigger>mgsort_bm</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Sort block model table.</description>
 </snippet>

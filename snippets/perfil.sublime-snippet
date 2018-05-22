@@ -9,6 +9,6 @@
   @pvalue=$19,@resol=${20:0},@ovcheck=${21,1}
 ]]></content>
   <tabTrigger>perfil</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Fill perimeters with blocks.</description>
 </snippet>

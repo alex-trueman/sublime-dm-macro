@@ -4,6 +4,6 @@
   $1
 ]]></content>
   <tabTrigger>else</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Conditional control in IF statement.</description>
 </snippet>

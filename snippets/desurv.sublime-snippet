@@ -6,6 +6,6 @@
   @survsmth=${13:1},@print=${14:0}
 ]]></content>
   <tabTrigger>desurv</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Desurvey drillhole data.</description>
 </snippet>

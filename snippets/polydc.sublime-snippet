@@ -8,6 +8,6 @@
   @srefnum=$14,@radius=$15,@maxgrdpt=$15
 ]]></content>
   <tabTrigger>polydc</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Polyhedral declustering.</description>
 </snippet>

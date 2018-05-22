@@ -4,6 +4,6 @@
   *code($4),*text($5)
 ]]></content>
   <tabTrigger>decode</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Decodes a field through a dictionary.</description>
 </snippet>

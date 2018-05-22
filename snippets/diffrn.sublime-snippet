@@ -4,6 +4,6 @@
   *key1($4),*key2($5),*key3($6),*key4($7)
 ]]></content>
   <tabTrigger>diffrn</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Relational difference operation.</description>
 </snippet>

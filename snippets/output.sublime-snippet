@@ -6,6 +6,6 @@
 ${12:system file name}
 ]]></content>
   <tabTrigger>output</tabTrigger>
-  <scope>source.dm_macro</scope>
+  <scope>source.dm-macro</scope>
   <description>Output Datamine table to system ASCII file.</description>
 </snippet>
