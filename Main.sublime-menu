@@ -17,17 +17,17 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/sublime-dm-macro/README.md"},
+                                "args": {"file": "${packages}/DM Macro/README.md"},
                                 "caption": "README"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/sublime-dm-macro/LICENSE"},
+                                "args": {"file": "${packages}/DM Macro/LICENSE"},
                                 "caption": "LICENSE"
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/sublime-dm-macro/RELEASE.md"},
+                                "args": {"file": "${packages}/DM Macro/RELEASE.md"},
                                 "caption": "Release notes"
                             },
                             {
@@ -35,7 +35,7 @@
                             },
                             {
                                 "args": {
-                                    "file": "${packages}/sublime-dm-macro/dm-macro.sublime-settings"
+                                    "file": "${packages}/DM Macro/dm-macro.sublime-settings"
                                 },
                                 "caption": "DM Macro Settings \u2013 Default",
                                 "command": "open_file"
