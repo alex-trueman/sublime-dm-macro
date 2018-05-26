@@ -233,7 +233,7 @@ contexts:
         1: invalid.illegal.badcharacters
 
     # Deprecated commands (still supported but shouldn't use).
-    - match: '(?i)^\s*(!(aed|gentra))\b'
+    - match: '(?i)^\s*(!(aed|gentra|sortx))\b'
       scope: invalid.deprecated.command
 
     # Obsolete commands (no longer valid, will break macro).
