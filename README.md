@@ -21,7 +21,7 @@ I have tested this scheme with the Material Colour Scheme, other colour schemes 
 
 Snippets are small pieces of code, mainly for Datamine macro processes. When you type the first letters of a Datamine keyword a prompt will appear at the cursor where you can select the snippet. Snippets are included for many processes with common options and defaults. These snippets are not exhaustive -- I will add additional snippets to the repository as I need them.
 
-![Inserting a snippet](fig/insert-snippet.gif)
+![Inserting a snippet](fig/insert-snippet.gif){width=50%}
 
 ### Compatibility
 
@@ -61,4 +61,31 @@ The snippets have only been tested in Sublime Text 3 (they should work in versio
 
 With commenting support when you select lines in a macro and type Ctrl + / the lines will be commented with '#'. If the lines are already commented they will be un-commented.
 
-![Comment lines](fig/comment-lines.gif)
+![Comment lines](fig/comment-lines.gif){width=50%}
+
+## My favourite Sublime Text settings (optional)
+
+These are some of the setting I use in Sublime Text 3.
+
+Fira has an excellent coding font that includes programming ligatures, now supported in Sublime Text 3. Go to the [Fira Code website](https://github.com/tonsky/FiraCode) to install and then and the following to your Sublime Text settings file:
+
+```YAML
+"font_face": "Fira Code Retina",
+```
+
+Assuming you have a HDPI monitor, the following setting may improve the quality of text rendering on Windows machines:
+
+```YAML
+"font_options":
+  [
+    "directwrite",
+    "subpixel_antialias"
+  ],
+```
+
+I am now using the excellent [Monokai Pro theme](https://www.monokai.pro/) and colour scheme (Filter Machine variant). Use package control to install this theme and colour scheme and then select it under `Preferences->Package Settings->Theme - Monokai Pro->Select Theme`. This process will install the following in your settings file:
+
+```YAML
+"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro (Filter Machine).tmTheme",
+"theme": "Monokai Pro (Filter Machine).sublime-theme",
+```
