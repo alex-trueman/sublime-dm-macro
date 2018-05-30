@@ -21,7 +21,7 @@ I have tested this scheme with the Material Colour Scheme, other colour schemes 
 
 Snippets are small pieces of code, mainly for Datamine macro processes. When you type the first letters of a Datamine keyword a prompt will appear at the cursor where you can select the snippet. Snippets are included for many processes with common options and defaults. These snippets are not exhaustive -- I will add additional snippets to the repository as I need them.
 
-![Inserting a snippet](fig/insert-snippet.gif){width=50%}
+<img align="center" src="fig/insert-snippet.gif" alt="Inserting a snippet", width="50%">
 
 ### Compatibility
 
@@ -61,7 +61,7 @@ The snippets have only been tested in Sublime Text 3 (they should work in versio
 
 With commenting support when you select lines in a macro and type Ctrl + / the lines will be commented with '#'. If the lines are already commented they will be un-commented.
 
-![Comment lines](fig/comment-lines.gif){width=50%}
+<img align="center" src="fig/comment-lines.gif" alt="Comment lines", width="50%">
 
 ## My favourite Sublime Text settings (optional)
 
