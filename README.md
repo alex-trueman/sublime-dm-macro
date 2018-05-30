@@ -15,7 +15,7 @@ Once installed open a Datamine macro file with the '.mac' extension. Go to the `
 
 The macro language syntax highlighting definition allows special highlighting of process names and their parameters, variables, and comments in Datamine macros. This scheme defines sub-schemes for language elements of EXTRA, LET, PICREC, and the DOS batch language. Certain errors such as incorrect variable, keyword, and file names are highlighted to help reduce bugs in macro code.
 
-I have tested this scheme with the Material Colour Scheme, other colour schemes may not work as well.
+I have tested this scheme with the Material and the Monokai Pro colour schemes, other colour schemes may not work as well.
 
 ## Snippets
 
@@ -73,7 +73,7 @@ Fira has an excellent coding font that includes programming ligatures, now suppo
 "font_face": "Fira Code Retina",
 ```
 
-Assuming you have a HDPI monitor, the following setting may improve the quality of text rendering on Windows machines:
+Assuming you have a HDI monitor, the following setting may improve the quality of text rendering on Windows machines:
 
 ```YAML
 "font_options":
