@@ -163,10 +163,11 @@ contexts:
         2: comment.line
 
     # Regular comments.
-    - match: "(#)(.*$)"
+    - match: "( *)(#)(.*$)"
       captures:
-        1: punctuation.definition.comment
-        2: comment.line
+        1: comment.line
+        2: punctuation.definition.comment
+        3: comment.line
 
     # Echo comments.
     - match: '(!echo |!ECHO |!Echo )(.+)'
