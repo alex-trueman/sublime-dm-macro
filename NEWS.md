@@ -17,3 +17,7 @@
 ## Known issues
 
 * Code lines that have comments appended at their end and exceed 80 characters will be flagged as invalid.
+
+# 0.1.3 (DRAFT)
+
+* Fix link to NEWS.md in menu.
