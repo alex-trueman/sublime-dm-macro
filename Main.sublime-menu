@@ -27,7 +27,7 @@
                             },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/DM Macro/RELEASE.md"},
+                                "args": {"file": "${packages}/DM Macro/NEWS.md"},
                                 "caption": "Release notes"
                             },
                             {
