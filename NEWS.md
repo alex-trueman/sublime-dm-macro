@@ -21,3 +21,4 @@
 # 0.1.3 (DRAFT)
 
 * Fix link to NEWS.md in menu.
+* Add TRUETHK snippet.
