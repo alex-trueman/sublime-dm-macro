@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+!truethk &in($1),&out($2),
+    @dip=$3,@dipdirn=$4
+]]></content>
+  <tabTrigger>truethk</tabTrigger>
+  <scope>source.dm-macro</scope>
+  <description>Calculate true thickness for drillholes intercepts.</description>
+</snippet>
