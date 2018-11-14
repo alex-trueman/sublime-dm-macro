@@ -270,7 +270,7 @@ contexts:
         1: invalid.illegal.syntax
 
     # Keywords.
-    - match: (?i)\b(abs|absent|acos|and|asin|atan|cos|exp|int|log|loge|logn|max|min|mod|modc|or|phi|pow|rais|round|sin|special|sqrt|tan|prev|next|first|last|default|decode|field|join|lcase|len|match|string|substr|trim|ucase|erase|saveonly|delete|if|else|elseif|end)(?=(\(|\s*))\b
+    - match: (?i)\b(abs|absent|acos|and|asin|atan|cos|exp|int|log|loge|logn|max|maxia|min|minia|mod|modc|or|phi|pow|rais|round|sin|special|sqrt|tan|prev|next|first|last|default|decode|field|join|lcase|len|match|string|substr|trim|ucase|erase|saveonly|delete|if|else|elseif|end)(?=(\(|\s*))\b
       scope: variable.language
 
     # Field definition syntax.
