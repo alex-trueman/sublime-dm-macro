@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+!inputd &out($1)
+${2:description or blank line}
+ALPHA a 12 y ''
+NUMERIC n y -
+[
+y
+]]></content>
+  <tabTrigger>inputd</tabTrigger>
+  <scope>source.dm-macro</scope>
+  <description>Create empty table with data definition.</description>
+</snippet>
