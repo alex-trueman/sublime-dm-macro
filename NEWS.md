@@ -21,4 +21,5 @@
 # 0.1.3 (DRAFT)
 
 * Fix link to NEWS.md in menu.
-* Add TRUETHK snippet.
+* Add `INPUTD` and `TRUETHK` snippets.
+* Add newly documented `maxia` and `minia` `EXTRA` functions.
