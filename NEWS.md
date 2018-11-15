@@ -14,7 +14,7 @@
 * Further improvements to README.
 * Fix issue where comment line is flagged as error if greater than 80 characters.
 
-# 0.1.3
+# 0.1.3 (2018-11-14)
 
 * Fix link to NEWS.md in menu.
 * Add `INPUTD` and `TRUETHK` snippets.
