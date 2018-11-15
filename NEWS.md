@@ -14,12 +14,12 @@
 * Further improvements to README.
 * Fix issue where comment line is flagged as error if greater than 80 characters.
 
-## Known issues
-
-* Code lines that have comments appended at their end and exceed 80 characters will be flagged as invalid.
-
-# 0.1.3 (DRAFT)
+# 0.1.3
 
 * Fix link to NEWS.md in menu.
 * Add `INPUTD` and `TRUETHK` snippets.
-* Add newly documented `maxia` and `minia` `EXTRA` functions.
+* Add highlighting for `maxia` and `minia` `EXTRA` functions.
+
+## Known issues
+
+* Code lines that have comments appended at their end and exceed 80 characters will be flagged as invalid.
