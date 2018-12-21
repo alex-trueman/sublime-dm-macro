@@ -20,11 +20,10 @@
 * Add `INPUTD` and `TRUETHK` snippets.
 * Add highlighting for `maxia` and `minia` `EXTRA` functions.
 
-# 0.1.4 ()
+# 0.1.4 (2018-12-21)
 
 * New snippets for: `TRIVOL`, `SUBJOI`, `SUBWVE`, `WEAVE`
 * Improved snippet documentation for `MGSORT`, `SELWF`, `TRIFIL`
-
 
 ## Known issues
 
