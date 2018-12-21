@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+!trivol &wiretr($1tr),&wirept($1pt),&perimin($2),
+  &out($3),
+  *zone($4),
+  @zbase=${5:0},@nosid=${6:0},@dtm=${7:0}
+]]></content>
+  <tabTrigger>trivol</tabTrigger>
+  <scope>source.dm-macro</scope>
+  <description>Calculate wireframe volume.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+# Matching records are output with all fields from 'in1' and 'in2'.
+# 'in2' updates 'in1' where fields are the same.
+!subjoi &in1($1),&in2($2),&out($3),
+  *key1($4),*key2($5),*key3($6),*key4($7)
+]]></content>
+  <tabTrigger>subjoi</tabTrigger>
+  <scope>source.dm-macro</scope>
+  <description>Sub-join.</description>
+</snippet>

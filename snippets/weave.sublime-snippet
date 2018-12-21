@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+# Common fields are output with all records from 'in1' and 'in2'.
+# For matching records, 'in2' updates 'in1'.
+!weave &in1($1),&in2($2),&out($3),
+  *key1($4),*key2($5),*key3($6),*key4($7)
+]]></content>
+  <tabTrigger>weave</tabTrigger>
+  <scope>source.dm-macro</scope>
+  <description>Weave join.</description>
+</snippet>
