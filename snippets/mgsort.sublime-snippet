@@ -1,14 +1,16 @@
 <snippet>
   <content><![CDATA[
+
+# @order sort order
+   # 1: ascending; 2: decending
+# @keyfrst order of output key fields
+   # 0: same as input; 1: key fields first
+# @roworder for identical rows
+   # 0: any order -- faster; 1: input file order -- slowest
+
 !mgsort &in($1),&out($2),
   *key1($3),*key2($4),*key3($5),*key4($6),
   @order=${7:1},@keyfrst=${8:0},@roworder=${9:0}
-
-# &in input file; &out sorted output file; *key1*...n andy number of key
-# field to be sorted by; @order sort order (1: ascending; 2: decending);
-# @keyfrst (0: output fields in same order as input; 1: key fields first);
-# @roworder (0: rows with identical keyfield in any order -- faster;
-# 1: rows in input file order -- slowest).
 ]]></content>
   <tabTrigger>mgsort</tabTrigger>
   <scope>source.dm-macro</scope>

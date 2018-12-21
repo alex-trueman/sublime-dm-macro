@@ -1,5 +1,13 @@
 <snippet>
   <content><![CDATA[
+# @modltype
+#   1: solid, fill inside
+#   2: solid, fill outside
+#   3: surface, fill below (XY), south (XZ), west (YZ)
+#   4: surface, above (XY), north (XZ), east (YZ)
+#   5: two surfaces, fill between.
+#   6: two surfaces, fill above upper and below lower
+
 !trifil &proto($1),&model($2),
   &perimin($3),&wiretr($4tr),&wirept($4pt),
   *zone($5),
