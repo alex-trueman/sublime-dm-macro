@@ -20,6 +20,12 @@
 * Add `INPUTD` and `TRUETHK` snippets.
 * Add highlighting for `maxia` and `minia` `EXTRA` functions.
 
+# 0.1.4 ()
+
+* New snippets for: `TRIVOL`, `SUBJOI`, `SUBWVE`, `WEAVE`
+* Improved snippet documentation for `MGSORT`, `SELWF`, `TRIFIL`
+
+
 ## Known issues
 
 * Code lines that have comments appended at their end and exceed 80 characters will be flagged as invalid.
